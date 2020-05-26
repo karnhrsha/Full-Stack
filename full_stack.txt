@@ -2,4 +2,4 @@ html and css
 javascript
 angular js 
 bootstrap
-
+html5 and css3
