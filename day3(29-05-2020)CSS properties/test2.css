@@ -1,0 +1,25 @@
+ul{
+    text-align: center;
+    list-style-type: none;
+    border:5px solid green;
+    background-color: lightcyan;
+}
+ul a{
+    display: inline-block;
+    color: blueviolet;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 22px;
+    border: 3px solid grey ;
+    background-color: lightgreen;
+    text-align: center;
+    padding: 10px;
+}
+ul a:hover{
+    color: crimson;
+    background-color: darkgray;
+    font-size: large;
+}
+ul a:active{
+    color: rgb(12, 2, 2);
+}

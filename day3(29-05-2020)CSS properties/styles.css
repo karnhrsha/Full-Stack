@@ -1,0 +1,46 @@
+.a1{
+    color: red;
+}
+.a2{
+    color: blue;
+}
+.a3{
+    color: chocolate;
+}
+.b1{
+    width: 70%;
+    height: 100%;
+    background-image: url('back.1.jpeg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.b2{
+    width: 70%;
+    height: 100%;
+    background-image: url('back.2.jpeg');
+}
+.b3{
+    width: 70%;
+    height: 100%;
+    background-image: url('back.3.jpg');
+}
+
+.c1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: 30px;
+    font-variant: normal;
+    font-weight: normal;
+}
+.c2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: normal;
+}
+.c3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: inherit;
+    font-size: 30px;
+    font-weight: bolder;
+}

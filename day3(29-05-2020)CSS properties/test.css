@@ -1,0 +1,25 @@
+.a1{
+    text-align: center;
+    border-style: dotted;
+    border-width: 3px;
+    border-color: tomato;
+    margin: 40px;
+    padding: 30px;
+
+}
+.a2{
+    text-align: center;
+    border-radius: 40px;
+    border-color: yellow;
+    border-style: groove;
+    border-right-color: royalblue;
+    border-left-color: sienna;
+    margin: 30px;
+}
+.a3{
+    text-align: center;
+    border-color: red;
+    border-right-color: yellowgreen;
+    border-style: double;
+    margin: 20px;
+}
