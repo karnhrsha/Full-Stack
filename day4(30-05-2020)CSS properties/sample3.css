@@ -1,0 +1,11 @@
+.a1{
+    border:2px solid red;
+    text-align: center;
+}
+div:hover{
+    transform: scaley(2);
+
+}
+div:active{
+    transform: rotateX(150deg)
+}
