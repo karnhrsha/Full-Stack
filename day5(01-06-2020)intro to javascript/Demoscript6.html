@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function checklogin(){
+                var v1,v2;
+                v1 = document.getElementById("txt1").value;
+                v2 = document.getElementById("txt2").value;
+                if(v1 == "admin" && v2 == "admin"){
+                    window.alert('successful login');
+                }
+                else{
+                    window.alert('unsuccessful login');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        UN   :<input type="test" id="txt1" /><br/>
+        PED :<input type="test" id="txt2" /><br />
+        <button type="button" onclick="checklogin()">check</button>
+    </body>
+</html>
