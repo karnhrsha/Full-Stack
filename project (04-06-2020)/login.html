@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login page</title>
+        <script>
+            function log()
+            {
+                var un= document.getElementById('t1').value;
+                var pwd= document.getElementById('t2').value;
+                var pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
+                if(un=='' || pwd=='')
+                {
+                    alert('please enter valid details');
+                }
+                else if(!pwd_expression.test(pwd))
+                {
+                    alert('Upper case, Lower case, Special character and Numeric letter are required in Password filed');
+                }
+                else if(document.getElementById("t1").value.length < 4)
+                {
+                    alert('user name min length is 4');
+                }
+                else{
+                    alert('login successful');
+                }
+            }
+        </script>
+                <style>
+                    .a1{
+                      font-size: 1cm;
+                       font-weight: bolder;
+                      color: blue;
+                      text-align: center;
+                    }
+                </style>
+    </head>
+    <body>
+        <h1 class="a1">Login here</h1>
+        <table align="center">
+            <tr>
+                <td align="right">username:</td>
+                <td><input type="text" placeholder="enter username" id="t1"></td>
+            </tr>
+            <tr>
+                <td align="right">Password:</td>
+                <td><input type="password" placeholder="enter password" id="t2"></td>
+            </tr>
+            <tr></tr>
+            <tr> </tr>
+            <tr>
+                <td align="right"><button onclick="log()">submit</button></td>
+                <td align="center"><button><a href="Home.html">cancel</a></button></td>
+            </tr>
+        </table>
+        <h3 align="center"><a href="register.html">New user</a></h3>
+    </body>
+</html>
