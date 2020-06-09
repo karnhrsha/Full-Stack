@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btnslideup").click(function(){
+                    $("#div1").slideUp(3000);
+                });
+                $("#btnslidedown").click(function(){
+                    $("#div1").slideDown(2000);
+                });
+                $("#btnslidetoggle").click(function(){
+                    $("#div2").slideToggle(3000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="div1">
+            <h1>slidedown</h1>
+        </div>
+        <div id="div2">
+            <h1>slideup</h1>
+        </div>
+        <button type="button" id="btnslidedown">slide down</button>
+        <button type="button" id="btnslideup">slide up</button>
+        <button type="button" id="btnslidetoggle">slide toggle</button>
+    </body>
+</html>
