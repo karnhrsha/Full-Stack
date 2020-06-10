@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Accordings</title>
+        <script type="text/javascript" src="jquery/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#div1").slideUp();
+                $("#div2").slideUp();
+                $("#div3").slideUp();
+                $("#id1").click(function(){
+                    $("#div1").slideDown();
+                });
+                $("#id2").click(function(){
+                    $("#div2").slideDown();
+                    $("#div1").slideUp();
+                    $("#div3").slideUp();
+                });
+                $("#id3").click(function(){
+                    $("#div3").slideDown();
+                    $("#div2").slideUp();
+                    $("#div1").slideUp();
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <h2 id="id1">selection1</h2>
+            <div id="div1">
+                <p>some text here</p>
+            </div>
+        </div>
+        <div>
+            <h2 id="id2">selector2</h2>
+            <div id="div2">
+                <p>some text here</p>
+            </div>
+        </div>
+        <div>
+            <h2 id="id3">selector3</h2>
+            <div id="div3">
+                <p>some text here</p>
+            </div>
+        </div>
+    </body>
+
+</html>

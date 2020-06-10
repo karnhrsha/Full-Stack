@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="StyleSheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+        <script src="jquery/jquery.min.js"></script>
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css"/>
+        <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#div1").tabs();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid" style="padding-top: 20px;">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">
+                open modal popup
+            </button>
+            <div class="modal" id="mymodal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Header text</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div id="div1">
+                                <ul>
+                                    <li><a href="#signin">sign in</a></li>
+                                    <li><a href="#signup">sign up</a></li>
+                                </ul>
+                                <div id="signin">
+                                    <p>place content here</p>
+                                </div>
+                                <div id="signup">
+                                    <p>place content here also</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

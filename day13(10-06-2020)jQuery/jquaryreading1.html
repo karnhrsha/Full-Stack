@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Get Contents</title>
+        <script type="text/javascript" src="jquery/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btnclick").click(function(){
+                alert($('#id1').html());
+            });
+        });    
+        </script>
+    </head>
+    <body>
+        User name:<input type="text" id="txtusername"/>
+        <p id="id1">some text here</p>
+        <button type="button" id="btnclick">get username</button>
+    </body>
+</html>
