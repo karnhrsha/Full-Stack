@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="jquery/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btnremoveclass").click(function(){
+                    $("#div1").removeClass();
+                });
+            });
+        </script>
+        <style>
+            .a1{
+                background-color: aquamarine;
+                color: blue;
+                font-size: xx-large;
+                text-align: center;
+                text-transform: capitalize;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="a1" id="div1">
+            <h1>Karan</h1>
+        </div>
+        <div>
+            <button type="button" id="btnremoveclass">remove class</button>
+    </body>
+</html>

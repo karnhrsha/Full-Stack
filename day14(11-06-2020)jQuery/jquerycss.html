@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="jquery/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btnadd").click(function(){
+                    $("#div1").css("background-color","lightblue");
+                });
+                $("#btnaddcss").click(function(){
+                    $("#div1").css({
+                        'background-color': 'lightgreen',
+                        'color':'blue',
+                        'font-size':'xx-large'
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="div1">
+            <p>app development using jquery</p>
+        </div>
+        <button type="button" id="btnadd">addCssproperties</button>
+        <button type="button" id="btnaddcss">multipleprop</button>
+    </body>
+</html>
