@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sliders with navbar</title>
+        <link rel="StyleSheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="bxslider-4-4.2.12/src/css/jquery.bxslider.css"></script>
+        <script type="text/javascript" src="bxslider-4-4.2.12/dist/jquery.bxslider.js"></script>
+        <style type="text/css">
+            .navbar {
+                width: 100%;
+                background-color: #555;
+                overflow: auto;
+            }
+            .navbar a {
+                float: left;
+                text-align: center;
+                padding: 12px;
+                color: white;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .navbar a:hover {
+                background-color: #000;
+            }
+            .active {
+                background-color: yellowgreen;
+            }
+            @media screen and (max-width: 500px) {
+                .navbar a {
+                    float: none;
+                    display: block;
+                }
+            }    
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".slider").bxSlider({
+                    node: 'fade',
+                    captions: true,
+                    slidewidth: 600,
+                    slideheight: 400
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <A HREF="www.yoursite.com/yourpage.html">
+            <table>
+                <tr>
+                    <td><IMG SRC="banner.jpg" BORDER="0" WIDTH="100%" HEIGHT="200" ALT="Come to my page!"></td>
+                    <td><IMG SRC="4.png" BORDER="0" WIDTH="100%" HEIGHT="200" ALT="Come to my page!"></td>
+                </tr>
+            </table>
+        </A>
+            <div class="navbar">
+                <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+                <a href="#"><i class="fa fa-fw fa-search"></i> FollowUs</a>
+                <a href="#"><i class="fa fa-fw fa-envelope"></i> ContactUs</a>
+                <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+              </div>
+        
+        <div class="slider">
+            <div><img src="1.jpg" title="Theme" /></div>
+            <div><img src="2.jpg" title="rainbow" /></div>
+            <div><img src="3.jpg" title="landscape" /></div>
+
+        </div>
+    </body>
+</html>
