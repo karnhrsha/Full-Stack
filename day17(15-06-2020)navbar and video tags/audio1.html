@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <audio id="myaudio">
+            <source src="file_example_MP3_1MG.mp3" type="audio/mp3" />
+        </audio>
+        <p>Click the buttons to play or pause the audio.</p>
+        <button onclick="playaudio()" type="button">play audio</button>
+        <button onclick="pauseaudio()" type="button">pause audio</button>
+        <script>
+            var x =document.getElementById("myaudio");
+            function playaudio() {
+                x.play();
+            }
+            function pauseaudio(){
+                x.pause();
+            }
+        </script>
+    </body>
+</html>
